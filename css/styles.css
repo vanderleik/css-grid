@@ -9,10 +9,22 @@
 
 .one {
     border: 2px solid red;
-    grid-column: 1 / 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.two, .three, .four, .five, .six {
+ .three {
     border: 2px solid red;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
+.four {
+    border: 2px solid red;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.two, .five, .six {
+    border: 2px solid red;
+} 
